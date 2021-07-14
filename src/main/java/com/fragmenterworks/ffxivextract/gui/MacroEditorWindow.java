@@ -79,7 +79,7 @@ public class MacroEditorWindow extends JFrame {
 	public MacroEditorWindow() {
 		
 		this.setTitle("Macro Editor");
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 				

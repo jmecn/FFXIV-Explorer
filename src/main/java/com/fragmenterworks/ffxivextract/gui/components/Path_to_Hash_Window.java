@@ -33,7 +33,7 @@ public class Path_to_Hash_Window extends JFrame {
 	
 	public Path_to_Hash_Window() {
 		setTitle(Strings.PATHTOHASH_TITLE);
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 		setBounds(100, 100, 544, 196);

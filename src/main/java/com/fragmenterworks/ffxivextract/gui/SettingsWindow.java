@@ -33,7 +33,7 @@ public class SettingsWindow extends JDialog {
 	public SettingsWindow(JFrame parent) {
 		super(parent, ModalityType.APPLICATION_MODAL);
 		this.setTitle(Strings.DIALOG_TITLE_SETTINGS);
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 		

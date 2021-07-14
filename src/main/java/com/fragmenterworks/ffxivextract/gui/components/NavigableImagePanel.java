@@ -260,7 +260,7 @@ public class NavigableImagePanel extends JPanel {
 	public NavigableImagePanel() {		
 		setNavigationImageEnabled(false);
 		try {
-			bg = ImageIO.read(getClass().getResource("/res/bg.png"));
+			bg = ImageIO.read(getClass().getResource("/bg.png"));
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

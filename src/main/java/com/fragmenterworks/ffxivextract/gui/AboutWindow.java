@@ -68,7 +68,7 @@ public class AboutWindow extends JFrame {
 		website.setFont(standardFont);
 		specialThanks.setFont(standardFont);
 		
-		ImageIcon image = new ImageIcon(getClass().getResource("/res/me.png"));
+		ImageIcon image = new ImageIcon(getClass().getResource("/me.png"));
 		meImage.setIcon(image);				
 			
 		website.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -94,7 +94,7 @@ public class AboutWindow extends JFrame {
 		aboutWindow.add(meImage, BorderLayout.LINE_END);
 		getContentPane().add(aboutWindow);		
 		
-		ImageIcon icon = new ImageIcon(getClass().getResource("/res/frameicon.png"));
+		ImageIcon icon = new ImageIcon(getClass().getResource("/frameicon.png"));
 		
 		this.setIconImage(icon.getImage());
 		this.pack();
@@ -135,10 +135,10 @@ public class AboutWindow extends JFrame {
 				if (easterEggActivate >= 5)
 				{
 					try {
-						Constants.setUIFont(new FontUIResource(Font.createFont(Font.TRUETYPE_FONT, getClass().getResource("/res/cache").openStream()).deriveFont(13.5f)));
+						Constants.setUIFont(new FontUIResource(Font.createFont(Font.TRUETYPE_FONT, getClass().getResource("/cache").openStream()).deriveFont(13.5f)));
 						
-						titleFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResource("/res/cache").openStream()).deriveFont(20.0f);
-						standardFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResource("/res/cache").openStream()).deriveFont(14.0f);
+						titleFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResource("/cache").openStream()).deriveFont(20.0f);
+						standardFont = Font.createFont(Font.TRUETYPE_FONT, getClass().getResource("/cache").openStream()).deriveFont(14.0f);
 						
 						appname.setFont(titleFont);
 						author.setFont(standardFont);

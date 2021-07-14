@@ -28,7 +28,7 @@ public class ModelViewerWindow extends JFrame {
 	public ModelViewerWindow(JFrame parent, String sqPackPath) {
 		
 		this.setTitle(Strings.DIALOG_TITLE_MODELVIEWER);
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 		setSize(800, 600);				

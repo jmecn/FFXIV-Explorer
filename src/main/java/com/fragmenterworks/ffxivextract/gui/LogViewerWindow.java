@@ -47,7 +47,7 @@ public class LogViewerWindow extends JFrame {
 
 	public LogViewerWindow() {
 		setTitle("Log Viewer");		
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 				

@@ -106,7 +106,7 @@ public class MusicSwapperWindow extends JFrame {
 		{
 			this.setTitle(Strings.DIALOG_TITLE_FILEINJECT);
 		}
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 

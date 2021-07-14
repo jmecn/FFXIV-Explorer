@@ -55,7 +55,7 @@ public class SCDConverterWindow extends JFrame {
 	
 	public SCDConverterWindow() {
 		this.setTitle(Strings.DIALOG_TITLE_SCDCONVERTER);
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 		
@@ -330,7 +330,7 @@ public class SCDConverterWindow extends JFrame {
 	private byte[] createSCDHeader(int oggLength, float volume, int numChannels, int sampleRate, int loopStart, int loopEnd)
 	{
 		//Load scd template scd header
-		InputStream inStream = getClass().getResourceAsStream("/res/scd_header.bin");
+		InputStream inStream = getClass().getResourceAsStream("/scd_header.bin");
 		byte scdHeader[] = new byte[SCD_HEADER_SIZE];
 		try {
 			inStream.read(scdHeader);

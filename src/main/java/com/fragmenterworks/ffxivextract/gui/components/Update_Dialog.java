@@ -58,7 +58,7 @@ public class Update_Dialog extends JDialog {
 		
 		setTitle("New Update Found");
 		
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		setIconImage(image.getImage());
 		

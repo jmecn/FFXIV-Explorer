@@ -15,40 +15,11 @@
     </properties>
 
     <build>
-        <sourceDirectory>.</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>src</directory>
-                <excludes>
-                    <!-- The source path layout is a mess from the origin
-                         we keep them as-is for consistancy reasons -->
-                    <exclude>META-INF/**</exclude>
-                    <exclude>ca/**</exclude>
-                    <exclude>com/**</exclude>
-                    <exclude>res/Thumbs.db</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <!-- Copy the license files -->
-                <directory>.</directory>
-                <includes>
-                    <include>NOTICE</include>
-                    <include>LICENSE</include>
-                </includes>
-            </resource>
-        </resources>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.7.0</version>
-                <configuration>
-                    <includes>
-                        <include>src/ca/**/*.java</include>
-                        <include>src/com/**/*.java</include>
-                    </includes>
-                </configuration>
             </plugin>
 
             <plugin>

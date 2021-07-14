@@ -131,7 +131,7 @@ public class FileManagerWindow extends JFrame implements TreeSelectionListener, 
 		//Load generic bg img
 		BufferedImage bg;
 		try {
-			bg = ImageIO.read(getClass().getResource("/res/triangular.png"));
+			bg = ImageIO.read(getClass().getResource("/triangular.png"));
 			paint = new TexturePaint(bg, new Rectangle(120, 120));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -142,7 +142,7 @@ public class FileManagerWindow extends JFrame implements TreeSelectionListener, 
 		this.setSize(1200, 800);
 		this.setTitle(title);
 		
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 		

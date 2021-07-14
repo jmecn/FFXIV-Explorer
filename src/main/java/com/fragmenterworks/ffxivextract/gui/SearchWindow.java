@@ -67,7 +67,7 @@ public class SearchWindow extends JDialog {
 			ISearchComplete searchCallback) {
 		super(parent, ModalityType.APPLICATION_MODAL);
 		this.setTitle(Strings.DIALOG_TITLE_SEARCH);
-		URL imageURL = getClass().getResource("/res/frameicon.png");
+		URL imageURL = getClass().getResource("/frameicon.png");
 		ImageIcon image = new ImageIcon(imageURL);
 		this.setIconImage(image.getImage());
 		this.searchCallback = searchCallback;
